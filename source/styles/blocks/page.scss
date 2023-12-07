@@ -1,1 +1,13 @@
-// .page {}
+.page {
+  height: 100%;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.page__body {
+  min-height: 100%;
+  display: grid;
+  // color: variables.$base-black;
+  grid-template-rows: min-content 1fr min-content;
+}
