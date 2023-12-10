@@ -1,0 +1,54 @@
+@use "../global/variables.scss";
+
+.user-nav {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+
+.user-list__item {
+  &--button {
+    @media (min-width: $desktop-width) {
+      margin-left: -20px;
+    }
+  }
+}
+
+.user-nav__link {
+  text-transform: uppercase;
+  display: flex;
+  color: $base-black;
+  padding: 22px;
+  cursor: pointer;
+
+}
+
+.user-nav--nojs {
+  display: none;
+}
+
+.user-nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.user-nav__text {
+  color: $base-black;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+    padding: 0 0 0 8px;
+
+  }
+}

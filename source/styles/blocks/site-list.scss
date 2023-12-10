@@ -1,0 +1,64 @@
+@use "../global/variables.scss";
+
+.site-list {
+  background-color: $base-white;
+  border-bottom: 1px solid $base-secondary;
+  list-style: none;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+    justify-content: space-around;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 0 20px;
+  }
+
+}
+
+.site-list__item {
+
+  &:first-child {
+    border-top: 1px solid $base-secondary;
+  }
+  border-bottom: 1px solid $base-secondary;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.site-list__link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: $base-black;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 32px 20px;
+
+    &--current {
+      box-shadow: inset 0 -1px $base-primary;
+    }
+
+  }
+
+  &:hover {
+    color: $base-primary;
+  }
+
+  &:focus-visible {
+    color: $base-primary;
+  }
+
+  &:active {
+    color: $base-secondary;
+  }
+}

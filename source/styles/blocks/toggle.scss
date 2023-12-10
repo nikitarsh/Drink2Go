@@ -1,0 +1,55 @@
+@use "../global/variables.scss";
+
+.toggle {
+  background-color: transparent;
+  border: none;
+  width: 20px;
+  height: 14px;
+  padding: 30px;
+  position: relative;
+  cursor: pointer;
+  color: $base-black;
+
+  &--closed {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 2px;
+      top: calc(50% - 6px);
+      left: calc(50% - 8px);
+      background-color: currentColor;
+      box-shadow: 0 5px 0 0 currentColor, 0 10px 0 0 currentColor;
+    }
+
+    &:active {
+      background-color: $base-white;
+    }
+  }
+
+  &--opened {
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      top: calc(50% - 1px);
+      left: calc(50% - 8px);
+      width: 16px;
+      height: 2px;
+      background-color: currentColor;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

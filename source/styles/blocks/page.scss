@@ -1,13 +1,29 @@
+@use "../global/variables.scss";
+
 .page {
   height: 100%;
-  font-family: "Montserrat", "Arial", sans-serif;
+  font-family: $primary-fonts;
   font-size: 14px;
   line-height: 20px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .page__body {
+  display: flex;
+  flex-direction: column;
   min-height: 100%;
-  display: grid;
-  // color: variables.$base-black;
-  grid-template-rows: min-content 1fr min-content;
+  min-width: 320px;
+  color: $base-black;
 }
