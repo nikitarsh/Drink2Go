@@ -1,0 +1,155 @@
+@use "../global/variables.scss";
+
+.slider__item-wpapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px 60px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 80px 0;
+    gap: 20px;
+
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 30px;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    padding: 30px 84px;
+
+  }
+}
+
+.slider__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slider__item {
+  min-height: 656px;
+
+  &--decaf {
+    background-color: $flat-white;
+  }
+
+  &--lavender {
+    background-color: $lavender;
+  }
+
+  &--espresso {
+    background-color: $espresso;
+  }
+}
+
+.slider__image {
+  display: block;
+  margin: 0 0 0 10px;
+  object-fit: contain;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 600px;
+  }
+}
+
+.slider__text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: flex-start;
+    padding: 150px 0 0;
+  }
+}
+
+.slider__promo {
+  font-family: $primary-fonts;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  color: $base-primary;
+}
+
+.slider__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 17px;
+    font-size: 56px;
+    line-height: 80px;
+    letter-spacing: 1.12px;
+  }
+}
+
+.slider__description {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 20px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    margin: 0 0 40px;
+  }
+}
+
+.slider__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 21px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.slider__price {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.slider__old-price {
+  color: $base-primary;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  margin: 0 3px 0 0;
+}
+
+.slider__link {
+  font-family: $primary-fonts;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  padding: 8px 20px;
+  color: $base-white;
+  background-color: $base-primary;
+  border-radius: 4px;
+}

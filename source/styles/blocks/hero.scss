@@ -1,0 +1,17 @@
+@use "../global/variables.scss";
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  background-color: $flat-white;
+  margin: 0;
+
+  @media (min-width: $tablet-width) and (max-width: $tablex-width-hight) {
+    &::after {
+      content: "";
+      display: block;
+      height: 188px;
+      background-color: $base-white;
+    }
+  }
+}
