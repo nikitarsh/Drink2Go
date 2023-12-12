@@ -59,6 +59,7 @@
     "w3c-html-validator": "1.6.1"
   },
   "dependencies": {
-    "nouislider": "^15.7.1"
+    "nouislider": "^15.7.1",
+    "swiper": "^11.0.5"
   }
 }
