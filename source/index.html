@@ -5,8 +5,9 @@
     <title>Интернет-магазин кофейных напитков Drink2Go</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
-  </head>
+    <link rel="stylesheet" href="https://unpkg.com/nouislider@15.7.1/dist/nouislider.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <body class="page__body">
     <header class="main-header">
       <div class="main-header__contaner">
@@ -178,8 +179,8 @@
           <form class="catalog__form form" method="get" action="https://echo.htmlacademy.ru/">
             <fieldset class="form__fieldset form__fieldset--price">
               <legend class="form__title">Цена</legend>
-              <div class="form__range"></div>
-              <div class="form__price">
+              <div class="form__range range-slider"></div>
+              <div class="form__price price">
                 <label class="visually-hidden" for="min-price">Минимальная цена.</label>
                 <input class="price__input" type="number" value="0" name="min-price" id="min-price" placeholder="0">
                 <label class="visually-hidden" for="max-price">Максимальная цена.</label>
@@ -502,5 +503,7 @@
         </section>
       </div>
     </footer>
+    <script src="scripts/index.js" defer></script>
+    <script src="https://unpkg.com/nouislider@15.7.1/dist/nouislider.min.js"></script>
   </body>
 </html>

@@ -16,6 +16,7 @@
   font-weight: 600;
   line-height: 24px;
   padding: 0;
+  margin: 0 0 20px 0;
 }
 
 .form__fieldset {
@@ -73,11 +74,26 @@
   }
 }
 
-.form__buttons {
-  font-family: $primary-fonts;
-  text-align: center;
-  font-size: 16;
-  font-weight: 400;
-  line-height: 24px;
+.form__range {
+  margin: 0 0 25px 0;
+  display: flex;
+}
 
+.form__price {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    margin: 0 auto;
+    width: 8px;
+    height: 2px;
+    background-color: $base-grey;
+    top: 12px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 }
