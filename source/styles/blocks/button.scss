@@ -2,6 +2,7 @@
 
 .button {
   font-family: $primary-fonts;
+  display: block;
   text-align: center;
   font-size: 16;
   font-weight: 400;
@@ -20,4 +21,20 @@
     color: $base-primary;
     background-color: $base-white;
   }
+
+  &--cart {
+    position: relative;
+    padding: 8px 20px 8px 46px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.button__icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  right: auto;
+  margin: auto;
 }

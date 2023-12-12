@@ -2,3 +2,4 @@
 import './nav-menu.js';
 import './range.js';
 import './swiper.js';
+import './map.js';
