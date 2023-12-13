@@ -1,7 +1,5 @@
 const swiper = new Swiper('.swiper', {
   loop: true,
-  watchSlidesVisibility: true,
-  watchSlidesProgress: true,
 
   pagination: {
     el: '.swiper-pagination',

@@ -2,10 +2,9 @@
 
 .user-nav {
   list-style: none;
-  display: flex; 
+  display: flex;
   justify-content: flex-end;
 }
-
 
 .user-list__item {
   &--button {
@@ -21,7 +20,6 @@
   color: $base-black;
   padding: 22px;
   cursor: pointer;
-
 }
 
 .user-nav--nojs {

@@ -11,18 +11,18 @@
   grid-template-areas: "logo user" "site site";
 
   @media (min-width: $tablet-width) {
-     grid-template-columns: auto 1fr 180px;
+    grid-template-columns: auto 1fr 180px;
     grid-template-areas: "logo site user";
     padding: 0 20px;
     min-height: 80px;
-   }
+  }
 
-    @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 1440px;
     grid-template-columns: 335px 1fr 280px;
     gap: 0 20px;
     padding: 0 40px;
-   }
+  }
 }
 
 .header__description {
@@ -74,7 +74,7 @@
 
 }
 
-.main-nav--close  {
+.main-nav--close {
   @media (max-width: $mobile-width) {
     display: none;
   }

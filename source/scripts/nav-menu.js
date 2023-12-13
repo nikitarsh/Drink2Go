@@ -13,4 +13,4 @@ toggle.addEventListener('click', () => {
     mainNav.classList.replace('main-nav--open', 'main-nav--close');
     toggle.classList.replace('toggle--opened', 'toggle--closed');
   }
-})
+});

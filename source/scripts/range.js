@@ -31,4 +31,4 @@ priceInput.forEach((input, index) => {
 
 buttonReset.addEventListener('click', () => {
   rangeContainer.noUiSlider.reset();
-})
+});
