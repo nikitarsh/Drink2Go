@@ -1,0 +1,40 @@
+@use "../global/variables.scss";
+
+.social__list {
+  list-style: none;
+  display: flex;
+  gap: 10px 20px;
+  padding: 0;
+}
+
+.social__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  min-height: 40px;
+}
+
+.social__icon {
+  display: block;
+}
+
+.social__link {
+  color: $base-grey;
+  padding: 9px;
+
+  &:hover {
+    color: $base-primary;
+    background-color: $base-secondary;
+  }
+
+  &:active {
+    color: $base-primary;
+    background-color: $primary-clear;
+  }
+
+  &:focus-visible {
+    color: $base-primary;
+    background-color: $base-secondary;
+  }
+}

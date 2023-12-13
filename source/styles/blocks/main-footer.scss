@@ -1,1 +1,83 @@
-// .main-footer {}
+@use "../global/variables.scss";
+
+.footer__logo {
+  @media (min-width: $desktop-width) {
+    margin: 0 0 10px;
+  }
+}
+
+.footer__logo-image {
+  display: block;
+}
+
+.footer__wrapper {
+  margin: 0 auto;
+  background-color: $base-white;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    gap: 30px;
+    grid-template: repeat(3, auto) / repeat(3, 1fr);
+    grid-template-areas: "head head head" "shop media contacts" "dev dev dev";
+    padding: 40px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 20px 30px;
+    grid-template: repeat(2, auto) / repeat(4, 318px);
+    grid-template-areas: "head shop media contacts" "dev dev dev dev";
+    width: 1440px;
+    padding: 40px 40px;
+  }
+}
+
+.footer__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid $base-secondary;
+
+  @media (min-width: $tablet-width) {
+    grid-area: head;
+    padding: 0;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    grid-area: head;
+    padding: 0;
+  }
+}
+
+.footer__text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 10px;
+    display: inline-block;
+  }
+}
+
+.footer__social {
+  margin-top: auto;
+}
+
+.footer__shop {
+  grid-area: shop;
+}
+
+.footer__media {
+  grid-area: media;
+}
+
+.footer__contacts {
+  grid-area: contacts;
+}
+
+.footer__dev {
+  grid-area: dev;
+}
