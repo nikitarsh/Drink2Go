@@ -1,6 +1,6 @@
 @use "../global/variables.scss";
 
-.product__cards-select {
+.catalog__cards-select {
   border: none;
   display: flex;
   align-items: center;
@@ -19,7 +19,7 @@
   font-size: 16px;
 }
 
-.products__select {
+.card__select {
   font-family: $primary-fonts;
   font-size: 16px;
   font-weight: 600;
@@ -35,7 +35,7 @@
   background-color: $base-white;
 }
 
-.cards__list {
+.card__list {
   list-style: none;
   display: grid;
   gap: 20px 0;
@@ -54,7 +54,7 @@
   }
 }
 
-.cards__item {
+.card__item {
   display: flex;
   flex-direction: column;
   border-radius: 4px;
@@ -71,7 +71,7 @@
   }
 }
 
-.products__image {
+.card__image-img {
   display: block;
   object-fit: contain;
 }

@@ -27,7 +27,7 @@
               alt="Интернет-магазин кофейных напитков Drink2Go">
           </picture>
         </a>
-        <p class="header__description">Интернет-магазин кофейных напитков</p>
+        <p class="main-header__description">Интернет-магазин кофейных напитков</p>
       </div>
       <nav class="main-nav main-nav--close main-nav--open main-nav--nojs">
         <ul class="main-nav__list site-list site-list--nojs">
@@ -45,7 +45,7 @@
           </li>
         </ul>
       </nav>
-      <ul class="header__nav user-nav user-nav--nojs">
+      <ul class="main-header__nav user-nav user-nav--nojs">
         <li class="user-nav__item">
           <a class="user-nav__link">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -297,23 +297,23 @@
             <button class="form__buttons button button--reset" type="reset">Сбросить</button>
           </div>
         </form>
-        <div class="product__cards">
-          <fieldset class="product__cards-select">
+        <div class="catalog__cards card">
+          <fieldset class="catalog__cards-select select">
             <label class="select__label" for="sorting">Сортировка:</label>
-            <select class="products__select" name="sorting" id="sorting">
+            <select class="card__select" name="sorting" id="sorting">
               <option class="select__option" value="default">по умолчанию</option>
               <option class="select__option" value="increase">по возрастанию</option>
               <option class="select__option" value="decrease">по убыванию</option>
             </select>
           </fieldset>
-          <ul class="cards__list">
-            <li class="cards__item">
+          <ul class="card__list">
+            <li class="card__item">
               <a class="card__image card__image--link" href="#">
                 <picture>
                   <source type="image/webp"
                     srcset="./images/catalog/catalog-can-1@1x.webp 1x, ./images/catalog/catalog-can-1@2x.webp 2x"
                     width="130" height="188">
-                  <img class="products__image" src="./images/catalog/catalog-can-1@1x.jpg 1x"
+                  <img class="card__image-img" src="./images/catalog/catalog-can-1@1x.jpg"
                     srcset="./images/catalog/catalog-can-1@2x.jpg 2x" width="130" height="188"
                     alt="Кофейный напиток Декаф Флэт Уайт.">
                 </picture>
@@ -330,13 +330,13 @@
                 </button>
               </div>
             </li>
-            <li class="cards__item">
+            <li class="card__item">
               <a class="card__image card__image--link" href="#">
                 <picture>
                   <source type="image/webp"
                     srcset="./images/catalog/catalog-can-2@1x.webp 1x, ./images/catalog/catalog-can-2@2x.webp 2x"
                     width="130" height="188">
-                  <img class="products__image" src="./images/catalog/catalog-can-2@1x.png 1x"
+                  <img class="card__image-img" src="./images/catalog/catalog-can-2@1x.png"
                     srcset="./images/catalog/catalog-can-2@2x.png 2x" width="130" height="188"
                     alt="Кофейный напиток Декаф Флэт Уайт.">
                 </picture>
@@ -353,13 +353,13 @@
                 </button>
               </div>
             </li>
-            <li class="cards__item">
+            <li class="card__item">
               <a class="card__image card__image--link" href="#">
                 <picture>
                   <source type="image/webp"
                     srcset="./images/catalog/catalog-can-3@1x.webp 1x, ./images/catalog/catalog-can-3@2x.webp 2x"
                     width="130" height="188">
-                  <img class="products__image" src="./images/catalog/catalog-can-3@1x.png 1x"
+                  <img class="card__image-img" src="./images/catalog/catalog-can-3@1x.png"
                     srcset="./images/catalog/catalog-can-3@2x.png 2x" width="130" height="188"
                     alt="Кофейный напиток Декаф Флэт Уайт.">
                 </picture>
@@ -376,13 +376,13 @@
                 </button>
               </div>
             </li>
-            <li class="cards__item">
+            <li class="card__item">
               <a class="card__image card__image--link" href="#">
                 <picture>
                   <source type="image/webp"
                     srcset="./images/catalog/catalog-can-4@1x.webp 1x, ./images/catalog/catalog-can-4@2x.webp 2x"
                     width="130" height="188">
-                  <img class="products__image" src="./images/catalog/catalog-can-4@1x.png 1x"
+                  <img class="card__image-img" src="./images/catalog/catalog-can-4@1x.png"
                     srcset="./images/catalog/catalog-can-1@2x.png 2x" width="130" height="188"
                     alt="Кофейный напиток Декаф Флэт Уайт.">
                 </picture>
@@ -399,13 +399,13 @@
                 </button>
               </div>
             </li>
-            <li class="cards__item">
+            <li class="card__item">
               <a class="card__image card__image--link" href="#">
                 <picture>
                   <source type="image/webp"
                     srcset="./images/catalog/catalog-can-5@1x.webp 1x, ./images/catalog/catalog-can-5@2x.webp 2x"
                     width="130" height="188">
-                  <img class="products__image" src="./images/catalog/catalog-can-1@1x.png 1x"
+                  <img class="card__image-img" src="./images/catalog/catalog-can-1@1x.png"
                     srcset="./images/catalog/catalog-can-1@2x.png 2x" width="130" height="188"
                     alt="Кофейный напиток Декаф Флэт Уайт.">
                 </picture>
@@ -422,13 +422,13 @@
                 </button>
               </div>
             </li>
-            <li class="cards__item">
+            <li class="card__item">
               <a class="card__image card__image--link" href="#">
                 <picture>
                   <source type="image/webp"
                     srcset="./images/catalog/catalog-can-6@1x.webp 1x, ./images/catalog/catalog-can-6@2x.webp 2x"
                     width="130" height="188">
-                  <img class="products__image" src="./images/catalog/catalog-can-6@1x.png 1x"
+                  <img class="card__image-img" src="./images/catalog/catalog-can-6@1x.png"
                     srcset="./images/catalog/catalog-can-6@2x.png 2x" width="130" height="188"
                     alt="Кофейный напиток Декаф Флэт Уайт.">
                 </picture>
@@ -486,17 +486,17 @@
     </div>
   </main>
   <footer class="main-footer">
-    <div class="footer__wrapper">
-      <div class="footer__header">
-        <a class="footer__logo" href="index.html">
+    <div class="main-footer__wrapper">
+      <div class="main-footer__header">
+        <a class="main-footer__logo" href="index.html">
           <picture>
             <source media="(min-width: 768px)" srcset="./images/icons/Logo-big.svg" width="170" height="36">
-            <img class="footer__logo-image" src="./images/icons/Logo-medium.svg" width="82" height="36"
+            <img class="main-footer__logo-image" src="./images/icons/Logo-medium.svg" width="82" height="36"
               alt="Логотип сайта Drink2Go.">
           </picture>
         </a>
-        <span class="footer__text">Интернет-магазин кофейных напитков</span>
-        <section class="footer__social social">
+        <span class="main-footer__text">Интернет-магазин кофейных напитков</span>
+        <section class="main-footer__social social">
           <h2 class="visually-hidden">Социальные сети.</h2>
           <ul class="social__list">
             <li class="social__item">
@@ -532,7 +532,7 @@
           </ul>
         </section>
       </div>
-      <section class="footer__shop shop">
+      <section class="main-footer__shop shop">
         <h3 class="shop__title title-small">Интернет-магазин
           <span class="visually-hidden"> ссылки.</span>
         </h3>
@@ -551,7 +551,7 @@
           </li>
         </ul>
       </section>
-      <section class="footer__media media">
+      <section class="main-footer__media media">
         <h3 class="media__title title-small">Медиа
           <span class="visually-hidden"> ссылки.</span>
         </h3>
@@ -567,7 +567,7 @@
           </li>
         </ul>
       </section>
-      <section class="footer__contacts contacts">
+      <section class="main-footer__contacts contacts">
         <h3 class="contacts__title title-small">Контакты</h3>
         <address class="contacts__address">
           <p class="contacts__text">
@@ -577,7 +577,7 @@
             +7 (999) 999-99-99</a>
         </address>
       </section>
-      <section class="footer__dev developed">
+      <section class="main-footer__dev developed">
         <h2 class="visually-hidden">Авторское право.</h2>
         <p class="developed__text">Разработано в</p>
         <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy

@@ -1,16 +1,16 @@
 @use "../global/variables.scss";
 
-.footer__logo {
+.main-footer__logo {
   @media (min-width: $desktop-width) {
     margin: 0 0 10px;
   }
 }
 
-.footer__logo-image {
+.main-footer__logo-image {
   display: block;
 }
 
-.footer__wrapper {
+.main-footer__wrapper {
   margin: 0 auto;
   background-color: $base-white;
 
@@ -31,7 +31,7 @@
   }
 }
 
-.footer__header {
+.main-footer__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -53,7 +53,7 @@
   }
 }
 
-.footer__text {
+.main-footer__text {
   display: none;
 
   @media (min-width: $desktop-width) {
@@ -62,22 +62,22 @@
   }
 }
 
-.footer__social {
+.main-footer__social {
   margin-top: auto;
 }
 
-.footer__shop {
+.main-footer__shop {
   grid-area: shop;
 }
 
-.footer__media {
+.main-footer__media {
   grid-area: media;
 }
 
-.footer__contacts {
+.main-footer__contacts {
   grid-area: contacts;
 }
 
-.footer__dev {
+.main-footer__dev {
   grid-area: dev;
 }
