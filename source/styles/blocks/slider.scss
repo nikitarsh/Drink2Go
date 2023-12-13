@@ -152,4 +152,19 @@
   color: $base-white;
   background-color: $base-primary;
   border-radius: 4px;
+
+  &:hover:not(:disabled),
+  &:focus-visible {
+    color: $base-white;
+    background-color: $primary-light;
+  }
+
+  &:active:not(:disabled) {
+    background-color: $primary-dark;
+  }
+
+  &:disabled {
+    background-color: $primary-grey;
+    color: $base-white;
+  }
 }

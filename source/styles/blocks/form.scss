@@ -67,6 +67,7 @@
     flex-direction: row;
     justify-content: center;
     grid-area: -1/1/-2/-1;
+    gap: 0 20px;
   }
 
   @media (min-width: $desktop-width) {
