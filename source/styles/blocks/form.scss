@@ -103,5 +103,8 @@
 }
 
 .form__buttons:first-child {
-  margin: 0 0 20px;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 0 20px;
+  }
 }
