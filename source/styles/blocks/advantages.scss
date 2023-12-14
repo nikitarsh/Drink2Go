@@ -7,7 +7,7 @@
   font-size: 12px;
   font-weight: 700;
   line-height: 16px;
-  letter-spacing: 0.48px;
+  margin: 0 0 5px;
   text-transform: uppercase;
   color: $base-primary;
 }
@@ -24,19 +24,25 @@
 
   @media (min-width: $desktop-width ) {
     padding: 100px 40px 120px 40px;
+    width: 1440px;
   }
 }
 
 .advantages__heading {
   font-size: 24px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 36px;
   text-align: center;
+  margin: 0 0 36px;
 
   @media (min-width: $tablet-width ) {
     font-size: 42px;
     font-weight: 700;
     line-height: 64px;
+  }
+
+  @media (min-width: $tablet-width ) {
+    margin: 0 0 81px 0;
   }
 }
 
@@ -45,12 +51,14 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 32px;
+  margin: 0 0 4px;
 
   @media (min-width: $tablet-width ) {
     font-size: 24px;
     font-weight: 700;
     line-height: 36px;
   }
+
 }
 
 .advantages__description {
@@ -58,7 +66,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  padding: 0 10px;
+  margin: 0;
 
   @media (min-width: $tablet-width ) and (max-width: $tablex-width-hight) {
     font-size:16px;
@@ -83,6 +91,7 @@
 
   @media (min-width: $desktop-width ) {
     grid-template-columns: repeat(4, 318px);
+    margin: 0;
   }
 }
 

@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 20px 60px;
+  padding: 20px 20px 23px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -17,7 +17,7 @@
     gap: 30px;
     flex-direction: row-reverse;
     align-items: flex-start;
-    padding: 30px 84px;
+    padding: 30px calc(50% - 615px) 84px;
 
   }
 }
@@ -46,7 +46,7 @@
 
 .slider__image {
   display: block;
-  margin: 0 0 0 10px;
+  margin: 0 0 10px;
   object-fit: contain;
 
   @media (min-width: $tablet-width) {
@@ -90,7 +90,7 @@
   font-weight: 700;
   line-height: 48px;
   text-align: center;
-  margin: 0;
+  margin: 0 0 10px;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 17px;
@@ -105,6 +105,7 @@
   font-weight: 400;
   text-align: center;
   line-height: 20px;
+  margin: 0 0 20px;
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
@@ -130,7 +131,7 @@
 
 .slider__price {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 32px;
 }
 
@@ -166,5 +167,56 @@
   &:disabled {
     background-color: $primary-grey;
     color: $base-white;
+  }
+}
+
+.slider-pagination .swiper-pagination-bullet {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.slider-pagination > .swiper-pagination-bullet {
+  position: relative;
+  display: block;
+  padding: 10px 0;
+  min-width: 62px;
+  min-height: 24px;
+  border: none;
+  background-color: transparent;
+  opacity: 1;
+  outline: none;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    min-width: 62px;
+    min-height: 4px;
+    background-color: $base-white;
+  }
+}
+
+.slider-pagination > .swiper-pagination-bullet-active {
+  &::after {
+    background-color: $base-primary;
+  }
+}
+
+.slider-pagination > .swiper-pagination-bullet:hover,
+.slider-pagination > .swiper-pagination-bullet:focus-visible {
+  &::after {
+    background-color: $primary-clear;
+  }
+}
+
+.slider-pagination > .swiper-pagination-bullet:active {
+  &::after {
+    background-color: $base-primary;
   }
 }

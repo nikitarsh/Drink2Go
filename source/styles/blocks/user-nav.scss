@@ -21,6 +21,10 @@
   color: $base-black;
   padding: 22px;
   cursor: pointer;
+
+  @media (min-width: $desktop-width) {
+    padding: 32px 20px;
+  }
 }
 
 .user-nav--nojs {

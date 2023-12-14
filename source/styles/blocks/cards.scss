@@ -1,17 +1,5 @@
 @use "../global/variables.scss";
 
-.catalog__cards-select {
-  border: none;
-  display: flex;
-  align-items: center;
-  margin: 0 0 15px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 0 25px;
-    justify-content: flex-end;
-  }
-}
-
 .select__label {
   font-weight: 600;
   line-height: 24px;
@@ -110,6 +98,7 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 32px;
+  margin: 0 0 4px;
 
   @media (min-width: $tablet-width ) {
     font-size: 24px;
@@ -122,11 +111,12 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+  margin: 0 0 16px;
 
   @media (min-width: $tablet-width ) {
-    font-size:16px;
     font-weight: 400;
     line-height: 24px;
+    margin: 0 0 20px;
   }
 }
 
@@ -142,4 +132,5 @@
   font-size: 20px;
   font-weight: 600;
   line-height: 32px;
+  margin: 0;
 }

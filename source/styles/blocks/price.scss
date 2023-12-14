@@ -5,7 +5,6 @@
   padding: 8px 10px;
   width: 118px;
   font-family: $primary-fonts;
-
   background-color: $base-white;
   border: none;
   appearance: textfield;
@@ -14,6 +13,7 @@
   font-weight: 500;
   text-align: center;
   box-shadow: inset 0 0 0 2px $primary-light;
+  line-height: 24px;
 
   @media (min-width: $tablet-width) {
     width: 87px;
@@ -24,7 +24,7 @@
   }
 
   &:hover {
-    box-shadow: inset 0 0 0 2px $lavender;
+    box-shadow: inset 0 0 0 2px $primary-dark;
     outline: none;
   }
 

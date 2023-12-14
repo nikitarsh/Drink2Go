@@ -24,6 +24,7 @@
 .catalog__header {
   display: flex;
   flex-direction: column;
+  margin: 0 0 21px;
 
   @media (min-width: $desktop-width) {
     grid-area: text;
@@ -40,6 +41,7 @@
   text-align: center;
   font-weight: 700;
   line-height: 16px;
+  margin: 0 0 4px;
   letter-spacing: 0.48px;
   text-transform: uppercase;
   color: $base-primary;
@@ -50,6 +52,7 @@
   font-weight: 700;
   line-height: 24px;
   text-align: center;
+  margin: 0;
 
   @media (min-width: $tablet-width ) {
     font-size: 42px;
@@ -60,6 +63,19 @@
 
 .product__cards {
   grid-area: item;
+}
+
+.catalog__cards-select {
+  border: none;
+  display: flex;
+  align-items: center;
+  margin: 0 0 15px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 25px;
+    justify-content: flex-end;
+  }
 }
 
 .catalog__form {
