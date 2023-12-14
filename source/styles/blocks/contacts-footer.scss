@@ -1,1 +1,49 @@
 @use "../global/variables.scss";
+
+.contacts__title {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 12px;
+  line-height: 20px;
+  color: $base-primary;
+}
+
+.contacts {
+  padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 0 0;
+  }
+
+  @media (min-width: $desktop-width)
+  {
+    padding: 10px 0 0 9px;
+  }
+}
+
+.contacts__link {
+  background: url("../../images/icons/stack.svg#Phone-logo") 0 3px / 13px 16px no-repeat;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: $base-black;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0 0 0 20px;
+
+  &:hover,
+  &:focus-visible {
+    color: $primary-light;
+  }
+
+  &:active {
+    color: $primary-dark;
+  }
+}
+
+.contacts__text {
+  background: url("../../images/icons/stack.svg#Address-icon") 0 3px / 13px 16px no-repeat;
+  padding: 0 0 0 20px;
+  margin: 0 0 16px;
+  font-style: normal;
+}
